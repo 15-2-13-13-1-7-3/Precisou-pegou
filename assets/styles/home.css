@@ -1,0 +1,16 @@
+@import url(styles.css);
+
+.card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .card-text {
+    flex-grow: 1;
+}
+
+.card-body .btn {
+    margin: 0 auto;
+    margin-top: auto;
+}

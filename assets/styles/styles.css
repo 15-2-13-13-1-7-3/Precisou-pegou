@@ -1,0 +1,52 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css);
+p{
+    margin: 0px;
+}
+header{
+    background-color: #1B0F57;
+    width: 100%;
+    height: 15vh;
+}
+.logo{
+    height: 15vh;
+}
+footer{
+    background-color: #FCBD30;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1vh;
+    width: 100%;
+    gap: 3vh;
+    font-weight: bold;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    position: relative;
+    z-index: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("../imgs/Logo-precisoupagou.jpeg") center/cover no-repeat;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: -1;
+}
+
+main {
+    flex: 1;
+}
+.btn{
+    background-color: #1B0F57;
+    color: white;
+}
+a{
+    color: #1B0F57;
+    text-decoration: none;
+}

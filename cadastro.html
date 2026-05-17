@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title> <link rel="stylesheet" href="assets/styles/cadastro.css">
+</head>
+<body>
+    <header>
+        <div class="logo_header">
+            <img src="assets/imgs/logo-precisoupegou.jpeg" alt="" class="logo">
+        </div>
+
+        <div class="info_header">
+
+        </div>
+    </header>
+    <main class="container d-flex justify-content-center align-items-center">
+
+    <div class="card shadow cadastro-card p-4">
+
+      <h2 class="text-center mb-4">
+        Cadastro
+      </h2>
+
+      <form id="formCadastro" action="https://formspree.io/f/mlgvrleo" method="POST">
+
+        <!-- Nome -->
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+
+          <input
+            name="nome"
+            type="text"
+            class="form-control"
+            id="nome"
+            placeholder="Digite seu nome"
+          >
+        </div>
+
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <!-- Telefone -->
+            <div class="mb-3 mb-md-0">
+              <label for="telefone" class="form-label">Telefone</label>
+
+              <input
+                name="telefone"
+                type="tel"
+                class="form-control"
+                id="telefone"
+                placeholder="Digite seu telefone"
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <!-- Email -->
+            <div class="mb-3 mb-md-0">
+              <label for="email" class="form-label">E-mail</label>
+
+              <input
+                name="email"
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Digite seu e-mail"
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Renda -->
+        <div class="mb-3">
+          <label for="renda" class="form-label">Renda</label>
+
+          <input
+            name="renda"
+            type="number"
+            class="form-control"
+            id="renda"
+            placeholder="Digite sua renda"
+          >
+        </div>
+
+        <!-- Interesse -->
+        <div class="mb-3">
+          <label for="interesse" class="form-label">
+            Descrição de Interesse
+          </label>
+
+          <textarea
+            name="interesse"
+            class="form-control"
+            id="interesse"
+            rows="4"
+            placeholder="Digite seus interesses"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-primary w-100"
+        >
+          Cadastrar
+        </button>
+
+      </form>
+
+      <div
+        id="mensagem"
+        class="mt-3 text-center"
+      ></div>
+
+      <div class="mt-3">
+        <a href="home.html" class="btn btn-secondary btn-sm w-100">← Voltar</a>
+      </div>
+
+    </div>
+
+    </main>
+    <footer>
+        <p>41 99215-4110</p>
+        <p>Precisoupegou@yahoo.com</p>
+    </footer>
+    <script src="assets/js/java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
